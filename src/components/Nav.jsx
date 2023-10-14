@@ -10,14 +10,14 @@ const Nav = () => {
                   <img src={headerLogo} alt='LOGO' width={130} height={29}/>
               </a>
               <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden '>
-                  {
-                      navLinks.map(i => (
-                        <li key={i.label}>
-                              <a href={i.href}
-                                className='font-montserrat leading-normal tect-lg text-slate-gray'>
-                                   {i.label}
-                               </a>
-                        </li>))
+                {
+                    navLinks.map((item) => (
+                        < li key = { item.label } >
+                              <a href={item.href} className='font-montserrat leading-normal text-lg text-slate-gray'>
+                                  {item.label}
+                          </a>
+                        </li>
+                    ))
                 }
               </ul>
           </nav>      
