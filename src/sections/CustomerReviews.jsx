@@ -4,21 +4,27 @@ import { reviews } from "../constants"
 
 const CustomerReviews = () => {
   return (
-    <section>
-      <h3>
+    <section className="max-container">
+      <h3 className="font-palanquin text-center text-4xl font-bold">
         Whar Our 
-        <span> Customers </span>
+        <span className="text-coral-red"> Customers </span>
         Say?
       </h3>
-      <p>
+      <p className="m-auto mt-4 max-w-lg text-center info-text">
         Hear genuine stories from our satisfied customers about their
         exceptional experiences with us.
       </p>
 
-      <div className="">
+      <div className="flex flex-1 justify-evenly items-center max-lg:flex-col gap-14 mt-24">
         {
-                  reviews.map((review, index) => (
-              <ReviewCard />
+            reviews.map((review, index) => (
+                <ReviewCard
+                    key={index}
+                    imgURL={review.imgURL}
+                    customerName={review.customerName}
+                    rating={review.rating}
+                    feedback={review.feedback}
+                />
           ))
         }
       </div>
