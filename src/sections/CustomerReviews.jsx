@@ -14,6 +14,14 @@ const CustomerReviews = () => {
         Hear genuine stories from our satisfied customers about their
         exceptional experiences with us.
       </p>
+
+      <div className="">
+        {
+                  reviews.map((review, index) => (
+              <ReviewCard />
+          ))
+        }
+      </div>
     </section>
   )
 }
