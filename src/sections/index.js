@@ -7,14 +7,4 @@ import SpecialOffer from './SpecialOffer';
 import SuperQuality from "./SuperQuality";
 import Subscribe from './Subscribe';
 
-export {
-    Hero,
-    PopularProducts,
-    SuperQuality,
-    Services,
-    SpecialOffer,
-    CustomerReviews,
-    Subscribe,
-    Footer
-
-}
+export {Hero, CustomerReviews, PopularProducts, Footer, Services, SpecialOffer, SuperQuality, Subscribe}
